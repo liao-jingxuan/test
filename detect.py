@@ -18,7 +18,7 @@ class YoloDetectorNode:
         self.result_file = "/home/dashuai/exam_ws/result.txt"
 
         # 加载模型并强制使用CPU
-        self.model = YOLO('/home/dashuai/桌面/yolov5-master/runs/detect/dect_model2/weights/best.pt')
+        self.model = YOLO('yolov5-master/runs/detect/dect_model2/weights/best.pt')
         self.model.to('cpu')
         rospy.loginfo("YOLO model loaded on CPU.")
 
